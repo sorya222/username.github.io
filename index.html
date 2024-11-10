@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مؤسسة عائشة بخيت التعليمية</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- صفحة التسجيل -->
+    <div id="register-form" class="form-container">
+      <h2>تسجيل جديد</h2>
+      <form onsubmit="saveUser(event)">
+        <label for="name">اسم الطالب:</label>
+        <input type="text" id="name" required placeholder="أدخل اسمك">
+        <label for="class">الفصل:</label>
+        <input type="text" id="class" required placeholder="أدخل فصلك">
+        <label for="specialization">التخصص:</label>
+        <input type="text" id="specialization" required placeholder="أدخل تخصصك">
+        <label for="parent-phone">رقم هاتف ولي الأمر:</label>
+        <input type="tel" id="parent-phone" required placeholder="أدخل رقم الهاتف">
+        <label for="password">كلمة السر:</label>
+        <input type="password" id="password" required placeholder="أدخل كلمة السر">
+        <button type="submit">تسجيل</button>
+      </form>
+    </div>
+
+    <!-- صفحة التطبيق -->
+    <div id="app-content" class="app-container" style="display: none;">
+      <header>
+        <h1>مرحبًا بك في تطبيق مؤسسة عائشة بخيت التعليمية</h1>
+        <button onclick="logout()">تسجيل الخروج</button>
+      </header>
+      <main>
+        <div class="section">
+          <h2>جدول المذاكرة</h2>
+          <a href="https://forms.gle/pZdky1aQYSdmDM9c9" target="_blank">مشاركة تقرير المذاكرة</a>
+        </div>
+        <div class="section">
+          <h2>الفيديوهات التعليمية</h2>
+          <a href="https://www.youtube.com/@%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D8%B9%D8%A7%D8%A6%D8%B4%D8%A9-%D8%A8%D8%AE%D9%8A%D8%AA-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9" target="_blank">رابط قناة اليوتيوب</a>
+        </div>
+        <div class="section">
+          <h2>الامتحانات الدورية</h2>
+          <p>هنا يمكن إضافة روابط للامتحانات الدورية الخاصة بالتخصصات المختلفة.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
